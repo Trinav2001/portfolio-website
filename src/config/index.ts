@@ -1,98 +1,140 @@
 import type { SiteConfig, SiteContent } from "../types";
 
 export const SITE_CONFIG: SiteConfig = {
-  title: "Alejandro Múnez — Mobile & Web Developer",
-  author: "Alejandro Múnez Cuntez",
+  title: "Trinav Rattan — Software Developer | AI Enthusiast",
+  author: "Trinav Rattan",
   description:
-    "Software Engineer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
+    "Software Engineer and AI enthusiast with a background in full-stack development and applied machine learning. Incoming MSE CIS student at UPenn.",
   lang: "en",
-  siteLogo: "/alejandro-small.jpg",
+  siteLogo: "/trinav-profile.jpg", // Make sure this is in the public folder
   navLinks: [
     { text: "Experience", href: "#experience" },
     { text: "Projects", href: "#projects" },
     { text: "About", href: "#about" },
   ],
   socialLinks: [
-    { text: "Twitter", href: "https://github.com/immois/astro-zen" },
-    { text: "LinkedIn", href: "https://github.com/immois/astro-zen" },
-    { text: "Github", href: "https://github.com/immois/astro-zen" },
-    { text: "Youtube", href: "https://github.com/immois/astro-zen" },
-    { text: "Dribbble", href: "https://github.com/immois/astro-zen" },
+    { text: "LinkedIn", href: "https://www.linkedin.com/in/trinavrattan/" },
+    { text: "Github", href: "https://github.com/Trinav2001" },
+    { text: "Email", href: "mailto:trinav@seas.upenn.edu" },
   ],
-  socialImage: "/zen-og.png",
-  canonicalURL: "https://astro-zen.vercel.app",
+  socialImage: "/trinav-profile.jpg",
+  canonicalURL: "https://yourdomain.vercel.app",
 };
 
 export const SITE_CONTENT: SiteContent = {
   hero: {
-    name: "Alejandro Múnez",
-    specialty: "Mobile & Web Developer",
+    name: "Trinav Rattan",
+    specialty: "Software Developer & AI Enthusiast",
     summary:
-      "Developer based in San Francisco, USA. I specialize in UI design, web and mobile application development and maintenance.",
-    email: "example@email.com",
+      "Incoming MSE CIS student at UPenn. Passionate about full-stack development, applied ML, and impactful tech.",
+    email: "trinav@seas.upenn.edu",
   },
+
   experience: [
     {
-      company: "Zalmart",
-      position: "Lead Android Developer",
-      startDate: "May 2018",
-      endDate: "Sept 2020",
+      company: "Sentinel Education LLP",
+      position: "Software Engineer",
+      startDate: "Aug 2023",
+      endDate: "Jul 2025",
       summary: [
-        "Implemented advanced memory management and code optimization techniques, resulting in a reduction in application load time by 40% and a decrease in crashes by 25%. This significantly improved user experience and increased user retention by 20%.",
-        "I led a team of developers in building and integrating new features using Jetpack Android components such as LiveData and ViewModel. This enabled us to build scalable and maintainable applications, reducing the crash rate by 20% and speeding up the time to delivery of new features by 15%.",
-        "Integrated Google Pay for in-app purchases, resulting in a 35% increase in mobile transaction revenue. Additionally, implemented Firebase Analytics to gain insights into user behavior, enabling data-driven optimizations and a 30% increase in user retention.",
+        "Developed company website using HTML5, TailwindCSS, Bootstrap 5, JavaScript, and PHP; deployed on Hostinger with GTM.",
+        "Automated workflows using Google Apps Script—cut manual effort and boosted speed by 80%.",
+        "Prototyped LMS platform with self-paced course flows, payments, and dashboards before shifting to 3rd-party LMS.",
+        "Optimized SEO and Ads, improving ranking from 93 to 25 and increasing leads by 83%, conversions by 155%.",
+        "Integrated Interakt for WhatsApp comms, improving student engagement efficiency.",
       ],
     },
     {
-      company: "Bankit",
-      position: "Mobile Developer",
-      startDate: "Feb 2017",
-      endDate: "May 2018",
+      company: "OpenText",
+      position: "Software Engineer Intern",
+      startDate: "Feb 2023",
+      endDate: "Aug 2023",
       summary: [
-        "I designed and developed a mobile application using Flutter, allowing it to be deployed on both Android and iOS with a single codebase. This reduced development time by 50% and maintenance costs by 30%, facilitating a consistent user experience on both platforms.",
-        "I integrated biometric authentication and data encryption, significantly improving the security of user data. This implementation resulted in a 40% increase in user trust and a 25% reduction in unauthorized access attempts.",
+        "Contributed to Java-based software changes for team Dolphin under FinOps agenda using SAFe methodology.",
+        "Built and deployed Jenkins CI/CD pipelines to improve automation and delivery.",
+        "Fixed build failures, debugged issues, and collaborated with India-US teams.",
+        "Led post-upgrade tasks and validated OPB endpoints for HCMX 2022.11 & 2023.05.",
       ],
     },
     {
-      company: "Driveer",
-      position: "Frontend Developer",
-      startDate: "Jun 2015",
-      endDate: "Oct 2016",
-      summary:
-        "Developed and integrated a real-time vehicle tracking system using WebSockets, improving accuracy and data update in the application. This functionality increased user satisfaction by 30% and reduced customer service inquiries by 25%.",
+      company: "Goolluck Investments (Motilal Oswal Partner)",
+      position: "Equity Market Analyst Intern",
+      startDate: "Jan 2021",
+      endDate: "Jan 2022",
+      summary: [
+        "Automated trade confirmation emails with Apps Script to streamline client workflows.",
+        "Built Python-based trading strategies using Nifty options and portfolio sizing.",
+      ],
+    },
+    {
+      company: "IT-ITeS Sector Skills Council, NASSCOM",
+      position: "Artificial Intelligence Intern",
+      startDate: "Jun 2021",
+      endDate: "Aug 2021",
+      summary: [
+        "Earned Gold certification with 70%+ in ML exams covering AI and algorithmic concepts.",
+        "Built a Triple Negative Breast Cancer detector using XGBoost + PCA (95% acc, 80% feature reduction).",
+        "Developed California housing price predictor using Random Forest after EDA + cleaning.",
+      ],
     },
   ],
-  projects: [
-    {
-      name: "Spotifu Music",
-      summary: "A music streaming app that emulates Spotify's core features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/spotifu.png",
-    },
-    {
-      name: "Shopp App",
-      summary: "An e-commerce platform that replicates Shopify's key features.",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/shopify-clon.png",
-    },
-    {
-      name: "ClonTagram",
-      summary: "A social network that replicates the features of Instagram",
-      linkPreview: "/",
-      linkSource: "https://github.com/immois/astro-zen",
-      image: "/clone-ig.png",
-    },
-  ],
-  about: {
-    description: `
-      Hi, I’m Alejandro Múnez, a passionate Mobile and Web Developer with a knack for crafting seamless digital experiences. With a strong background in both Android and iOS development, as well as front-end web technologies, I thrive in the intersection where creativity meets technology.
 
-      Over the years, I’ve honed my skills in building robust, user-friendly applications that not only meet the needs of users but also push the boundaries of what’s possible. My projects range from innovative mobile applications to responsive web designs, all with a focus on performance, security, and scalability.
-    `,
-    image: "/alejandro-big.jpg",
+  projects: [
+  {
+    name: "Chatty – WebRTC Video Chat App",
+    summary: [
+      "Created full-stack video calling and messaging app using WebRTC, Socket.IO, Express, and MongoDB.",
+      "Implemented peer-to-peer connection logic with signaling and real-time UI updates.",
+    ],
+    linkSource: "https://github.com/Trinav2001/chatty"
+  },
+  {
+    name: "QuoVit – Student Networking Platform",
+    summary: [
+      "Built social web platform using Node.js, MongoDB, and EJS templates with auth and profile features.",
+      "Users can post quotes, network with peers, and create student-based communities.",
+    ],
+    linkSource: "https://github.com/Trinav2001/QuoVit"
+  },
+  {
+    name: "SplitPay – Bill Splitting & Expense Tracker",
+    summary: [
+      "Built smart bill-splitting app with REST APIs, Django auth, and SQLite backend.",
+      "Designed responsive web UI with clean UX for debt tracking across devices.",
+    ],
+    linkSource: "https://github.com/Trinav2001/splitpay"
+  },
+  {
+    name: "Unified Multi-Modal Embedding for Audio-Text",
+    summary: [
+      "Redesigned VATT to create a cross-modal embedding system.",
+      "Added DropToken & Representations from intermediate transformer layers.",
+      "Improved downstream performance on audio-to-text and cross-modal tasks.",
+    ],
+    linkSource: "https://github.com/Trinav2001/multimodal-embedding"
+  },
+  {
+    name: "Retina Blood Vessel Segmentation with U-Net",
+    summary: [
+      "Enhanced U-Net with dilated convolutions and contrast normalization to segment retinal vessels.",
+      "Trained on DRIVE dataset, achieving improved accuracy on edge cases vs baseline U-Net.",
+    ],
+    linkSource: "https://github.com/Trinav2001/retina-unet"
+  },
+  {
+    name: "Super-Resolution GAN (SRGAN)",
+    summary: [
+      "Built GAN that transforms low-res images to high-res using perceptual and adversarial losses.",
+      "Trained on DIV2K dataset; implemented with TensorFlow + VGG loss network.",
+    ],
+    linkSource: "https://github.com/Trinav2001/srgan"
+  }
+],
+
+
+  about: {
+    description:
+      "Hey! I'm Trinav — a passionate software developer and AI enthusiast from India, joining the MSE CIS program at UPenn. Over the last few years, I’ve built products across web, automation, AI/ML, and full-stack systems. I enjoy building tech that actually works for people, whether it's automating emails or designing ML models. Currently, I’m diving deeper into systems, perception, and machine learning at Penn.",
+    image: "/trinav-profile.jpg",
   },
 };
-
-// #5755ff
